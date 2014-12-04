@@ -34,9 +34,10 @@ function draw() {
     y = 0; 
 
   }
+
   
-  drawDrawing();
 }
+drawDrawing();
 function drawDrawing() {
   background(200);
   
