@@ -23,7 +23,7 @@ function draw() {
   for (var i=0; i<bugs.length; i++) {
     bugs[i].move();
     bugs[i].display();
-    drawSaram();
+   
 
 
   }
