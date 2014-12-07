@@ -1,7 +1,7 @@
 
  var bugs = []; // array of Jitter objects
  var img;
- var img2;
+
 
 
 
@@ -10,7 +10,7 @@
   createCanvas(710, 400);
   // Create objects
   img = loadImage("p.jpg");
-  img2 = loadImage("a.png");
+ 
 
   for (var i=0; i<50; i++) {
     bugs.push(new Jitter());
