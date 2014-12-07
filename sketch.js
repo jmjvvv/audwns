@@ -1,6 +1,8 @@
 
  var bugs = []; // array of Jitter objects
- var image;
+ var img;
+ var img2;
+
 
 
 function setup() {
