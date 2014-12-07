@@ -24,17 +24,17 @@ var angle = 0;
 function draw() {
 
   background(img);
-  var d1 = 10 + (sin(angle) * diameter/2) + diameter/2;
-  var d2 = 10 + (sin(angle + PI/2) * diameter/2) + diameter/2;
-  var d3 = 10 + (sin(angle + PI) * diameter/2) + diameter/2;
+  var d1 = 10 + (sin(angle) * diameter/20) + diameter/02;
+  var d2 = 10 + (sin(angle + PI/20) * diameter/20) + diameter/20;
+  var d3 = 10 + (sin(angle + PI) * diameter/20) + diameter/20;
   
-  ellipse(0, height/2, d1, d1);
-  ellipse(width/2, height/2, d2, d2);
-  ellipse(width, height/2, d3, d3);
+  rect(0, height/2, d1, d1);
+  rect(width/2, height/2, d2, d2);
+  rect(width, height/2, d3, d3);
   
   angle += 0.02;
 
-  
+
   for (var i=0; i<bugs.length; i++) {
     bugs[i].move();
     bugs[i].display();
