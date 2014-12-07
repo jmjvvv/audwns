@@ -30,13 +30,15 @@ var d3 = 1 + (sin(angle + PI/20) * diameter/20) + diameter/20;
 var d4 = 1 + (sin(angle + PI/20) * diameter/20) + diameter/20;
 var d5 = 1 + (sin(angle + PI/20) * diameter/20) + diameter/20;
 var d6 = 1 + (sin(angle + PI/20) * diameter/20) + diameter/20;
+var d7 = 1 + (sin(angle + PI/20) * diameter/20) + diameter/20;
   
   rect(0, height/3, d1, d1);
   rect(width/2, height/2, d2, d2);
 rect(600, height/2, d3, d3);
 rect(300, 100, d4, d4);
-rect(500, 50, d4, d4);
-rect(150, 350, d4, d4);
+rect(500, 50, d5, d5);
+rect(150, 350, d6, d6);
+rect(150, 50, d7, d7);
   
   angle += 0.02;
 
