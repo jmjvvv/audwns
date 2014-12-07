@@ -32,7 +32,7 @@ function drawSaram(){
   image(img2,dir1+1,200);
 
   dir1=dir1+3;     
-  if(dir1>0){
+  if(dir1>720){
    dir1=1;
  }
 }
