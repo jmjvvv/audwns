@@ -32,8 +32,8 @@ function drawSaram(){
   image(img2,dir1+1,200);
 
   dir1=dir1+3;     
-  if(dir1>710){
-   dir1=-710;
+  if(dir1>0){
+   dir1=0;
  }
 }
 
