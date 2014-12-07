@@ -30,6 +30,7 @@ function Jitter() {
   };
 
   this.display = function() {
+    fill(255);
     rect(this.x, this.y, this.diameter, this.diameter);
   };
 }
