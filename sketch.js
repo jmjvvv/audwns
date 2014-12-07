@@ -2,7 +2,7 @@
  var bugs = []; // array of Jitter objects
  var img;
  var img2;
- var dir1=0;
+
 
 
 
@@ -28,14 +28,7 @@ function draw() {
 
   }
 }
-function drawSaram(){
-  image(img2,dir1-100,200);
 
-  dir1=dir1+3;     
-  if(dir1>720){
-   dir1=-720;
- }
-}
 
 
 // Jitter class
