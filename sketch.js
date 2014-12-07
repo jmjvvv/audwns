@@ -1,4 +1,4 @@
- /* var bg;*/
+
   var y = 0;
   var bugs = []; 
 
@@ -16,7 +16,6 @@
   function draw() {
      var duration1 = 5000;
      var timing1 = (new Date()%duration1)/duration1;
-    /*background(bg);*/
 
     image(img,600 + Math.cos(timing1*2*PI)*500,          
           400 + Math.sin(timing1*2*PI)*0);
