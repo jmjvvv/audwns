@@ -33,7 +33,7 @@ function drawSaram(){
 
   dir1=dir1+3;     
   if(dir1>0){
-   dir1=0;
+   dir1=1;
  }
 }
 
