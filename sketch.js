@@ -17,15 +17,16 @@ function setup() {
 }
 
 function draw() {
+   var duration1 = 5000;
+    var timing1 = (new Date()%duration1)/duration1;
+    image(img2,600 + Math.cos(timing1*2*PI)*500,          
+        400 + Math.sin(timing1*2*PI)*0);
   background(img);
   for (var i=0; i<bugs.length; i++) {
     bugs[i].move();
     bugs[i].display();
 
-    var duration1 = 5000;
-    var timing1 = (new Date()%duration1)/duration1;
-    image(img2,600 + Math.cos(timing1*2*PI)*500,          
-        400 + Math.sin(timing1*2*PI)*0);
+   
   }
 }
 
