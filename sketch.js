@@ -32,7 +32,7 @@ function draw() {
   rect(0, height/3, d1, d1);
   rect(width/2, height/2, d2, d2);
   rect(width, height/2, d3, d3);
-  rect(width, height/2, d4, d4);
+  rect(width/2, height/2, d4, d4);
   
   angle += 0.02;
 
