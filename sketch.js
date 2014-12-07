@@ -29,9 +29,9 @@ function draw() {
   }
 }
 function drawSaram(){
-  image(img2,dir1,200);
+  image(img2,dir1+500,200);
 
-  dir1=dir1+1;     
+  dir1=dir1+3;     
   if(dir1>720){
    dir1=-1520;
  }
