@@ -35,7 +35,7 @@ function Jitter() {
   this.display = function() {
     fill(255);
     noStroke();
-     image(img,this.x, this.y, this.diameter, this.diameter);
+     rect(this.x, this.y, this.diameter, this.diameter);
     
   };
 }
