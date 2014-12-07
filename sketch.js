@@ -1,9 +1,10 @@
 
  var bugs = []; // array of Jitter objects
-
+ var image;
 function setup() {
   createCanvas(710, 400);
   // Create objects
+ img = loadImage("p.jpg");
   for (var i=0; i<50; i++) {
     bugs.push(new Jitter());
   }
@@ -31,6 +32,8 @@ function Jitter() {
 
   this.display = function() {
     fill(255);
-    rect(this.x, this.y, this.diameter, this.diameter);
+    noStroke();
+     image(img,this.x, this.y, this.diameter, this.diameter);
+    
   };
 }
