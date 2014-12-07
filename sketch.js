@@ -182,7 +182,7 @@ Particle.prototype.update = function() {
 // Draw particle and connect it with a line
 // Draw a line to another
 Particle.prototype.display = function(other) {
-  stroke(255, this.lifespan);
+  stroke(255,255,255,100 this.lifespan);
   fill(255, this.lifespan/2);    
   rect(this.position.x,this.position.y, 8, 8);    
   // If we need to draw a line
