@@ -29,7 +29,7 @@ function draw() {
   }
 }
 function drawSaram(){
-  image(img2,dir1/10,200);
+  image(img2,dir1,200);
 
   dir1=dir1+1;     
   if(dir1>720){
