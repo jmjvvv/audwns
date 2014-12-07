@@ -13,7 +13,7 @@ var angle = 0;
   createCanvas(710, 400);
   diameter = height - 10;
   noStroke();
-  fill(255,0,0,100);
+  fill(255,255,255,100);
   // Create objects
   img = loadImage("p.jpg");
   for (var i=0; i<50; i++) {
