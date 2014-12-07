@@ -2,7 +2,7 @@
  var bugs = []; // array of Jitter objects
  var img;
  var img2;
- var dir1=100;
+ var dir1=0;
 
 
 
@@ -33,7 +33,7 @@ function drawSaram(){
 
   dir1=dir1+1;     
   if(dir1>720){
-   dir1=-720;
+   dir1=-920;
  }
 }
 
