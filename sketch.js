@@ -2,15 +2,15 @@
  var bugs = []; // array of Jitter objects
  var img;
  var img2;
-var dir1=0;
+ var dir1=0;
 
 
 
-function setup() {
+ function setup() {
   createCanvas(710, 400);
   // Create objects
- img = loadImage("p.jpg");
- img2 = loadImage("a.png");
+  img = loadImage("p.jpg");
+  img2 = loadImage("a.png");
 
   for (var i=0; i<50; i++) {
     bugs.push(new Jitter());
@@ -25,16 +25,17 @@ function draw() {
     bugs[i].display();
     drawSaram();
 
-   
+
   }
 }
- function drawSaram(){
-    image(img2,dir1+100,200);
-    
-     dir1=dir1+3;     
-      if(dir1>720){
-       dir1=-720;
-  }
+function drawSaram(){
+  image(img2,dir1+100,200);
+
+  dir1=dir1+3;     
+  if(dir1>720){
+   dir1=-720;
+ }
+}
 
 
 // Jitter class
@@ -52,7 +53,7 @@ function Jitter() {
   this.display = function() {
     fill(255);
     noStroke();
-     rect(this.x, this.y, this.diameter, this.diameter);
+    rect(this.x, this.y, this.diameter, this.diameter);
     
   };
 }
