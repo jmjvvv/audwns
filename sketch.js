@@ -26,13 +26,11 @@ function draw() {
   background(img);
   var d1 = 1 + (sin(angle + PI/20) * diameter/20) + diameter/20;
   var d2 = 1 + (sin(angle + PI/20) * diameter/20) + diameter/20;
-  var d3 = 1 + (sin(angle + PI/20) * diameter/20) + diameter/20;
-  var d4 = 1 + (sin(angle + PI/20) * diameter/20) + diameter/20;
+
   
   rect(0, height/3, d1, d1);
   rect(width/2, height/2, d2, d2);
-  rect(width, height/2, d3, d3);
-  rect(width/2, height/2, d4, d4);
+
   
   angle += 0.02;
 
