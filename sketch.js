@@ -27,9 +27,9 @@ function draw() {
   var d1 = 1 + (sin(angle + PI/20) * diameter/20) + diameter/15;
   var d2 = 1 + (sin(angle + PI/20) * diameter/20) + diameter/20;
 var d3 = 1 + (sin(angle + PI/20) * diameter/30) + diameter/20;
-var d4 = 1 + (sin(angle + PI/20) * diameter/20) + diameter/10;
+var d4 = 1 + (sin(angle + PI/20) * diameter/20) + diameter/20;
 var d5 = 1 + (sin(angle + PI/20) * diameter/20) + diameter/20;
-var d6 = 1 + (sin(angle + PI/20) * diameter/40) + diameter/15;
+var d6 = 1 + (sin(angle + PI/20) * diameter/40) + diameter/10;
 var d7 = 1 + (sin(angle + PI/20) * diameter/20) + diameter/20;
   
   rect(0, height/3, d1, d1);
