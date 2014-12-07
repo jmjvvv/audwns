@@ -1,17 +1,19 @@
 
  var bugs = []; // array of Jitter objects
  var image;
+
 function setup() {
   createCanvas(710, 400);
   // Create objects
  img = loadImage("p.jpg");
+
   for (var i=0; i<50; i++) {
     bugs.push(new Jitter());
   }
 }
 
 function draw() {
-  background(50, 89, 100);
+  background(img);
   for (var i=0; i<bugs.length; i++) {
     bugs[i].move();
     bugs[i].display();
