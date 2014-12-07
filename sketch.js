@@ -24,7 +24,7 @@ var angle = 0;
 function draw() {
 
   background(img);
-  var d1 = 1 + (sin(angle) * diameter/20) + diameter/02;
+  var d1 = 1 + (sin(angle + PI/20) * diameter/20) + diameter/20;
   var d2 = 1 + (sin(angle + PI/20) * diameter/20) + diameter/20;
   var d3 = 1 + (sin(angle + PI) * diameter/20) + diameter/20;
   
