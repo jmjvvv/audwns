@@ -2,7 +2,7 @@
  var bugs = []; // array of Jitter objects
  var img;
  var img2;
- var dir1=0;
+ var dir1=100;
 
 
 
