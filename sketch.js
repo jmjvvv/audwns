@@ -1,5 +1,6 @@
 var bg;
 var y = 0;
+var bugs = []; 
 
 function setup() {
   // The background image must be the same size as the parameters
@@ -7,6 +8,8 @@ function setup() {
   // is 710x400 pixls.
   bg = loadImage("p.jpg");
   img=loadImage("a.png");
+  for (var i=0; i<50; i++) {
+    bugs.push(new Jitter());
   createCanvas(720, 400);
 }
 
@@ -25,7 +28,25 @@ function draw() {
   y++;
   if (y > height) {
     y = 0; 
+     for (var i=0; i<bugs.length; i++) {
+    bugs[i].move();
+    bugs[i].display();
   }
 }
 
+function Jitter() {
+  this.x = random(width);
+  this.y = random(height);
+  this.diameter = random(10, 30);
+  this.speed = 1;
+
+  this.move = function() {
+    this.x += random(-this.speed, this.speed);
+    this.y += random(-this.speed, this.speed);
+  };
+
+  this.display = function() {
+    ellipse(this.x, this.y, this.diameter, this.diameter);
+  };
+}
 
